@@ -1,0 +1,453 @@
+--- settings.cfg.orig	2014-12-28 14:34:08.770639275 -0800
++++ settings.cfg	2014-12-28 15:11:09.226062193 -0800
+@@ -69,14 +69,14 @@
+ dontShowLauncher = True
+ PITCH_DOWN
+ {
+-	primary = W
++	primary = Comma
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ PITCH_UP
+ {
+-	primary = S
++	primary = O
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+@@ -90,21 +90,21 @@
+ }
+ YAW_RIGHT
+ {
+-	primary = D
++	primary = E
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ ROLL_LEFT
+ {
+-	primary = Q
++	primary = Quote
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ ROLL_RIGHT
+ {
+-	primary = E
++	primary = Period
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+@@ -125,14 +125,14 @@
+ }
+ SAS_HOLD
+ {
+-	primary = F
++	primary = U
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ SAS_TOGGLE
+ {
+-	primary = T
++	primary = Y
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+@@ -146,14 +146,14 @@
+ }
+ CAMERA_MODE
+ {
+-	primary = C
++	primary = J
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ CAMERA_NEXT
+ {
+-	primary = V
++	primary = K
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+@@ -251,14 +251,14 @@
+ }
+ TIME_WARP_INCREASE
+ {
+-	primary = Period
++	primary = V
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ TIME_WARP_DECREASE
+ {
+-	primary = Comma
++	primary = W
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+@@ -286,49 +286,49 @@
+ }
+ TRANSLATE_UP
+ {
+-	primary = K
++	primary = T
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ TRANSLATE_DOWN
+ {
+-	primary = I
++	primary = C
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ TRANSLATE_LEFT
+ {
+-	primary = J
++	primary = H
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ TRANSLATE_RIGHT
+ {
+-	primary = L
++	primary = N
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ TRANSLATE_FWD
+ {
+-	primary = H
++	primary = D
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ TRANSLATE_BACK
+ {
+-	primary = N
++	primary = B
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ RCS_TOGGLE
+ {
+-	primary = R
++	primary = P
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+@@ -391,35 +391,35 @@
+ }
+ THROTTLE_CUTOFF
+ {
+-	primary = X
++	primary = Q
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ THROTTLE_FULL
+ {
+-	primary = Z
++	primary = Semicolon
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ LANDING_GEAR
+ {
+-	primary = G
++	primary = I
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ HEADLIGHT_TOGGLE
+ {
+-	primary = U
++	primary = G
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ BRAKES
+ {
+-	primary = B
++	primary = X
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+@@ -440,14 +440,14 @@
+ }
+ EVA_forward
+ {
+-	primary = W
++	primary = Comma
+ 	secondary = None
+ 	group = 268435456
+ 	switchState = Any
+ }
+ EVA_back
+ {
+-	primary = S
++	primary = O
+ 	secondary = None
+ 	group = 268435456
+ 	switchState = Any
+@@ -461,35 +461,35 @@
+ }
+ EVA_right
+ {
+-	primary = D
++	primary = E
+ 	secondary = None
+ 	group = 268435456
+ 	switchState = Any
+ }
+ EVA_yaw_left
+ {
+-	primary = Q
++	primary = Quote
+ 	secondary = None
+ 	group = 268435456
+ 	switchState = Any
+ }
+ EVA_yaw_right
+ {
+-	primary = E
++	primary = Period
+ 	secondary = None
+ 	group = 268435456
+ 	switchState = Any
+ }
+ EVA_Pack_forward
+ {
+-	primary = W
++	primary = Comma
+ 	secondary = None
+ 	group = 268435456
+ 	switchState = Any
+ }
+ EVA_Pack_back
+ {
+-	primary = S
++	primary = O
+ 	secondary = None
+ 	group = 268435456
+ 	switchState = Any
+@@ -503,7 +503,7 @@
+ }
+ EVA_Pack_right
+ {
+-	primary = D
++	primary = E
+ 	secondary = None
+ 	group = 268435456
+ 	switchState = Any
+@@ -545,14 +545,14 @@
+ }
+ EVA_TogglePack
+ {
+-	primary = R
++	primary = P
+ 	secondary = None
+ 	group = 268435456
+ 	switchState = Any
+ }
+ EVA_Use
+ {
+-	primary = F
++	primary = U
+ 	secondary = None
+ 	group = 268435456
+ 	switchState = Any
+@@ -566,21 +566,21 @@
+ }
+ EVA_Lights
+ {
+-	primary = L
++	primary = N
+ 	secondary = None
+ 	group = 268435456
+ 	switchState = Any
+ }
+ Docking_pitchUp
+ {
+-	primary = S
++	primary = O
+ 	secondary = None
+ 	group = 0
+ 	switchState = Rotation
+ }
+ Docking_pitchDown
+ {
+-	primary = W
++	primary = Comma
+ 	secondary = None
+ 	group = 0
+ 	switchState = Rotation
+@@ -594,21 +594,21 @@
+ }
+ Docking_yawRight
+ {
+-	primary = D
++	primary = E
+ 	secondary = None
+ 	group = 0
+ 	switchState = Rotation
+ }
+ Docking_rollLeft
+ {
+-	primary = Q
++	primary = Quote
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ Docking_rollRight
+ {
+-	primary = E
++	primary = Period
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+@@ -629,14 +629,14 @@
+ }
+ Docking_linFwd
+ {
+-	primary = W
++	primary = Comma
+ 	secondary = None
+ 	group = 0
+ 	switchState = Translation
+ }
+ Docking_linBack
+ {
+-	primary = S
++	primary = O
+ 	secondary = None
+ 	group = 0
+ 	switchState = Translation
+@@ -650,7 +650,7 @@
+ }
+ Docking_linRight
+ {
+-	primary = D
++	primary = E
+ 	secondary = None
+ 	group = 0
+ 	switchState = Translation
+@@ -685,14 +685,14 @@
+ }
+ Editor_pitchUp
+ {
+-	primary = S
++	primary = O
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ Editor_pitchDown
+ {
+-	primary = W
++	primary = Comma
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+@@ -706,21 +706,21 @@
+ }
+ Editor_yawRight
+ {
+-	primary = D
++	primary = E
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ Editor_rollLeft
+ {
+-	primary = Q
++	primary = Quote
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ Editor_rollRight
+ {
+-	primary = E
++	primary = Period
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+@@ -762,28 +762,28 @@
+ }
+ Editor_coordSystem
+ {
+-	primary = F
++	primary = U
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ Editor_toggleSymMethod
+ {
+-	primary = R
++	primary = P
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ Editor_toggleSymMode
+ {
+-	primary = X
++	primary = Q
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ Editor_toggleAngleSnap
+ {
+-	primary = C
++	primary = J
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+@@ -914,21 +914,21 @@
+ }
+ WHEEL_STEER_RIGHT
+ {
+-	primary = D
++	primary = E
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ WHEEL_THROTTLE_DOWN
+ {
+-	primary = S
++	primary = O
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
+ }
+ WHEEL_THROTTLE_UP
+ {
+-	primary = W
++	primary = Comma
+ 	secondary = None
+ 	group = 0
+ 	switchState = Any
