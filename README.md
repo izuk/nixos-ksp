@@ -13,7 +13,7 @@ Building
 Download the zip archive from kerbalspaceprogram.com, and install it
 into the Nix store with:
 
-    nix-prefetch-url file:///path/to/ksp-linux-0-90-0.zip
+    nix-prefetch-url file:///path/to/ksp-linux-1-0-2.zip
 
 If necessary, modify ksp.nix with the right sha256 hash.
 
@@ -30,6 +30,7 @@ is read-only and KSP doesn't like that.  So, copy everything
 into a local tree:
 
     cp -r /nix/store/<hash>-ksp-linux-0.90.0/KSP_linux /path/to/games
+    chmod -R ug+w /path/to/games/KSP_linux
 
 Go ahead and run it:
 

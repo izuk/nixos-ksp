@@ -3,22 +3,27 @@ with import <nixpkgs> {};
 assert stdenv.system == "x86_64-linux";
 
 stdenv.mkDerivation {
-  name = "ksp-linux-0.90.0";
-  
+
+  name = "ksp-linux-1.0.2";
+
   src = fetchurl {
-    name = "ksp-linux-0-90-0.zip";
-    sha256 = "1h9rn2w8km8is5azi9b7gnz35323pwc67ms9y2kcc298vv6j5qd3";
+    name = "ksp-linux-1-0-2.zip";
+    sha256 = "0qb1si0ns731ribb84chz6csjlfc6sc7rli4v1hx84ffx3lq5rpd";
   };
 
-  builder = ./builder.sh;
-
   libPath = stdenv.lib.makeLibraryPath [
-    stdenv.gcc.gcc
-    xlibs.libX11 xlibs.libXext xlibs.libXcursor xlibs.libXrandr
+    stdenv.cc.cc
     mesa
+    pulseaudio
+    xlibs.libX11
+    xlibs.libXext
+    xlibs.libXcursor
+    xlibs.libXrandr
     ];
   
   buildInputs = [ unzip ];
+
+  builder = ./builder.sh;
 
   meta = {
     description = "Kerbal Space Program";
