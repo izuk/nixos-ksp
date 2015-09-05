@@ -4,17 +4,17 @@ assert stdenv.system == "x86_64-linux";
 
 stdenv.mkDerivation {
 
-  name = "ksp-linux-1.0.2";
+  name = "ksp-linux-1.0.4";
 
   src = fetchurl {
-    name = "ksp-linux-1-0-2.zip";
-    sha256 = "0qb1si0ns731ribb84chz6csjlfc6sc7rli4v1hx84ffx3lq5rpd";
+    name = "ksp-linux-1-0-4.zip";
+    sha256 = "1alpch8l3chs1j34bnrmr86msf8xj24wvm4dalx1m09dq93bzg2y";
   };
 
   libPath = stdenv.lib.makeLibraryPath [
     stdenv.cc.cc
     mesa
-    pulseaudio
+    libpulseaudio
     xlibs.libX11
     xlibs.libXext
     xlibs.libXcursor

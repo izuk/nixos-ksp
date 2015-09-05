@@ -4,16 +4,16 @@ Nix Expression for Kerbal Space Program
 Prerequisites
 -------------
 
-* Only for 0.90.0.
+* Only for 1.0.4.
 * Only on x86_64.
 
 Building
 --------
 
-Download the zip archive from kerbalspaceprogram.com, and install it
+Download the zip archive from kerbalspaceprogram.com and install it
 into the Nix store with:
 
-    nix-prefetch-url file:///path/to/ksp-linux-1-0-2.zip
+    nix-prefetch-url file:///path/to/ksp-linux-1-0-4.zip
 
 If necessary, modify ksp.nix with the right sha256 hash.
 
@@ -29,7 +29,7 @@ Now you have KSP in the store, and KSP.x86_64 will run, but the store
 is read-only and KSP doesn't like that.  So, copy everything
 into a local tree:
 
-    cp -r /nix/store/<hash>-ksp-linux-0.90.0/KSP_linux /path/to/games
+    cp -r /nix/store/<hash>-ksp-linux-1.0.4/KSP_linux /path/to/games
     chmod -R ug+w /path/to/games/KSP_linux
 
 Go ahead and run it:
