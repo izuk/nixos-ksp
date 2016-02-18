@@ -4,11 +4,11 @@ assert stdenv.system == "x86_64-linux";
 
 stdenv.mkDerivation {
 
-  name = "ksp-linux-1.0.4";
+  name = "ksp-linux-1.0.5";
 
   src = fetchurl {
-    name = "ksp-linux-1-0-4.zip";
-    sha256 = "1alpch8l3chs1j34bnrmr86msf8xj24wvm4dalx1m09dq93bzg2y";
+    name = "ksp-linux-1-0-5.zip";
+    sha256 = "0i5rqlplz6d49qcsl7r14472699mlzgmg42pidg36ixlwa41s7g5";
   };
 
   libPath = stdenv.lib.makeLibraryPath [
