@@ -4,11 +4,12 @@ assert stdenv.system == "x86_64-linux";
 
 stdenv.mkDerivation {
 
-  name = "ksp-linux-1.0.5";
+  name = "ksp-linux-1.2";
 
-  src = fetchurl {
-    name = "ksp-linux-1-0-5.zip";
-    sha256 = "0i5rqlplz6d49qcsl7r14472699mlzgmg42pidg36ixlwa41s7g5";
+  src = requireFile {
+    name = "ksp-linux-1-2.zip";
+    sha256 = "15y5yj3wk0wnqi576498f4phpf9xx0pxq5wgfpjpn6af79p1nw51";
+    url = "http://www.kerbalspaceprogram.com/";
   };
 
   libPath = stdenv.lib.makeLibraryPath [
